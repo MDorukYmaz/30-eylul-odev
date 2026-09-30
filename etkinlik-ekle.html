@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlik Ekle</title>
+    <link rel="stylesheet" href="2416501038.css">
+</head>
+<body>
+
+    <header>
+        <h1>Etkinlik Ekle</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="etkinlikler.html">Etkinlikler</a>
+        <a href="etkinlik-detay.html">Detay</a>
+        <a href="etkinlik-ekle.html">Ekle</a>
+        <a href="etkinlik-guncelle.html">Guncelle</a>
+    </nav>
+
+    <main>
+
+        <form action="" method="post">
+
+            <p>
+                <label for="ad">Etkinlik Adı</label>
+                <input type="text" id="ad" name="ad" required>
+            </p>
+
+            <p>
+                <label for="kategori">Kategori</label>
+                <select id="kategori" name="kategori" required>
+                    <option value="seminer">Seminer</option>
+                    <option value="atolye">Atölye</option>
+                    <option value="soylesi">Söyleşi</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="tarih">Tarih / Saat</label>
+                <input type="datetime-local" id="tarih" name="tarih" required>
+            </p>
+
+            <p>
+                <label for="yer">Yer</label>
+                <input type="text" id="yer" name="yer" required>
+            </p>
+
+            <p>
+                <label for="aciklama">Açıklama</label>
+                <textarea id="aciklama" name="aciklama" rows="5" cols="40" required></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Kaydet</button>
+            </p>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+</html>

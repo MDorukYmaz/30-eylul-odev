@@ -1,0 +1,66 @@
+/* Mustafa Doruk Yılmaz — 2416501038 */
+
+:root {
+  --no: 2416501038;
+  --ton: mod(var(--no), 30);
+  --renk-ana: hsl(var(--ton) 85% 18%);
+  --renk-zemin: white;
+  --font: system-ui;
+  --bosluk-m: 1rem;  --kose: 8px;
+}
+body { font-family: var(--font); margin: 0; background: var(--renk-zemin); }
+
+header, nav {
+  background-color: var(--renk-ana);
+  color: white;
+  padding: 0 var(--bosluk-m);
+}
+
+header { padding-top: var(--bosluk-m); }
+nav { padding-bottom: var(--bosluk-m); }
+nav a { color: white; margin-right: var(--bosluk-m); }
+
+main { padding: var(--bosluk-m); }
+
+img { max-width: 100%; height: auto; }
+
+a { color: var(--renk-ana); font-weight: bold; }
+
+.etkinlikler, .detay {
+  display: grid;
+  gap: var(--bosluk-m);
+}
+
+.etkinlikler article, .detay dl {
+  background: white;
+  border: 5px solid #ddd;
+  border-radius: var(--kose);
+  padding: var(--bosluk-m);
+}
+
+@media (min-width: 700px) {
+  .etkinlikler { grid-template-columns: 1fr 1fr 1fr; }
+  .detay { grid-template-columns: 1fr 1fr; }
+}
+
+/* Form */
+label { display: block; }
+
+input, select, textarea, button {
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border-radius: var(--kose);
+}
+
+input:user-invalid, textarea:user-invalid {
+  border: 2px solid red;
+  background: white;
+}
+
+button {
+  background: var(--renk-ana);
+  color: white;
+  border: none;
+}
